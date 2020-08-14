@@ -3,6 +3,8 @@ import Table from './Table'
 import Form from './Form'
 import Api from './Api'
 import Clock from './Clock'
+import LoginControl from './LoginControl'
+import Warning from './Warning'
 
 class App extends Component {
 
@@ -52,8 +54,14 @@ class App extends Component {
                 <h1>Hello React</h1>
                 <Form handleSubmit={this.handleSubmit}/>
                 <Table characterData={this.state.characters} removeCharacters={this.removeCharacters} />
+                <hr />
                 <Api />
+                <hr />
                 <Clock />
+                <hr />
+                <LoginControl />
+                <hr />
+                <Warning />
             </div>
         )
     }
